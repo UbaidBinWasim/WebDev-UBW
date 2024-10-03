@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Design</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: grey;
+            padding: 50px;
+        }
+
+        .card{
+            width: 300px;
+            height: 410px;         
+            background-color: white;
+            border-radius: 7px;
+            pad: 0px 0px 34px 0px;
+        }
+
+        .img{
+            padding: 12px;
+        }
+
+        .img img{
+        border-radius: 7px;
+        }
+
+        .content{
+            padding: 7px 13px;
+            font-family: Arial;
+            margin-top: 1px;
+        }
+
+        .content p{
+            font-size: 13px;
+            color: grey;
+        }
+
+        .capsules{
+            padding: 0 90px;
+        }
+
+        .capsules span{
+            border: 1px solid grey;
+            padding: 0px 5px;
+            border-radius: 15px;
+            font-size: small;
+            color: grey;
+        }
+
+        .button{
+            text-align: center;
+        }
+
+        .button button{
+            border-radius: 15px;
+            padding: 7px 9px;
+            background-color: rgb(164, 218, 228);
+            color: blue;
+            font-size: 12px;
+            margin-top: 2px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+    }
+
+    .button button:hover{
+        background-color: rgb(199, 239, 247);
+        color: rgb(17, 17, 199);
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="img"><img src="WebDev2.png" alt=""></div>
+
+        <div class="capsules">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+        </div>
+
+        <div class="content">
+            <h2>Web Development</h2>
+            <p>Web development involves creating and maintaining websites. It includes web design, web content development, client-side/server-side scripting, and network security configuration. Using languages like HTML, CSS, and JavaScript, developers build and optimize sites to ensure functionality, performance, and user experience.</p>
+        </div>
+
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
