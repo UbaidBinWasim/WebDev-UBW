@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Website</title>
+    <style>
+        :root {
+            --background-color: white;
+            --text-color: black;
+            --primary-color: blue;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header, footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Multicolor Website</h1>
+    </header>
+    <main>
+        <h2>This is a heading</h2>
+        <p>This is a paragraph of text on the website.</p>
+    </main>
+    <footer>
+        <button onclick="changeColor('theme1')">Theme 1</button>
+        <button onclick="changeColor('theme2')">Theme 2</button>
+        <button onclick="changeColor('theme3')">Theme 3</button>
+    </footer>
+    <script>
+        function changeColor(theme) {
+            if (theme === 'theme1') {
+                document.documentElement.style.setProperty('--background-color', 'white');
+                document.documentElement.style.setProperty('--text-color', 'black');
+                document.documentElement.style.setProperty('--primary-color', 'blue');
+            } else if (theme === 'theme2') {
+                document.documentElement.style.setProperty('--background-color', '#282c34');
+                document.documentElement.style.setProperty('--text-color', 'white');
+                document.documentElement.style.setProperty('--primary-color', 'red');
+            } else if (theme === 'theme3') {
+                document.documentElement.style.setProperty('--background-color', 'lightyellow');
+                document.documentElement.style.setProperty('--text-color', 'darkgreen');
+                document.documentElement.style.setProperty('--primary-color', 'orange');
+            }
+        }
+    </script>
+</body>
+</html>

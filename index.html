@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video, Audio & Media</title>
-</head>
-<body>
-    <video src="video1.mp4" height="255" controls poster="photo2.png"></video>
-    <audio src="audio1.mp3" controls></audio>
-    <svg height="100" width="100">
-        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-    </svg>
-    <!-- <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" width="322" height="422" frameborder="0" allowfullscreen></iframe> -->
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            background-color: rgb(168, 60, 60);
+        }
 
-    <iframe src="<iframe width="560" height="315" src="<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XZwBNDGuWGU?si=9ZKZvKd7wqVQkcW_&amp;start=750" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> allowfullscreen></iframe>" width="322" height="422" frameborder="0" allowfullscreen></iframe>
+        @media screen and (orientation: portrait) {
+            body {
+                border: 3px solid rgb(34, 22, 34);
+            }
+        }
+
+        @media only screen and (max-width: 420px) {
+            body {
+
+                background-color: rgb(184, 184, 224);
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+
+        .boxes {
+            display: flex;
+            font-size:xx-large;
+        }
+
+        .box {
+            width: 345px;
+            height: 345px;
+            background-color: rgb(160, 165, 118);
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hey I am a red body guy!
+    </div>
+
+    <div class="boxes">
+        <div class="box">
+            Box 1
+        </div>
+        <div class="box">
+            Box 2
+        </div>
+        <div class="box">
+            Box 3
+        </div>
+        <div class="box">
+            Box 4
+        </div>
+        <div class="box">
+            Box 5
+        </div>
+    </div>
 </body>
+
 </html>
